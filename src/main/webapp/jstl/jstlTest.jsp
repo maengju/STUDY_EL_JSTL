@@ -58,6 +58,29 @@
 	${car }<br>
 </c:forTokens>
 
+<h3>** jstlExam.jsp에서 넘어오는 데이터 **</h3>
+
+	${requestScope.list } <!--  -->
+
+<h3>** Index 2번째인 Data Print **</h3>
+${list[2] }
+
+<h3>** jstlExam.jsp에서 넘어오는 데이터 **</h3>
+
+${list2 }
+<br><br>
+
+<c:forEach var="personDTO" items="${list2 }">
+	이름 = ${personDTO.getName() } &emsp; 나이= ${personDTO.getAge() }<br>
+</c:forEach>
+
+
+<h3>메소드명을 변수명 처럼 사용</h3> <!-- set과 get 접두사 빼기, 뒤의 ()도 빼기  -->
+
+<c:forEach var="personDTO" items="${list2 }">
+	이름 = ${personDTO.name } &emsp; 나이= ${personDTO.age }<br>
+</c:forEach>
+
 
 
 

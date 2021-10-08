@@ -9,32 +9,35 @@
 <body>
 
 <h3>** include directive **</h3>
-
 <%@ include file="today.jsp" %>
 
-
 <h3>** include JSP tag **</h3>
-
 <jsp:include page="image.jsp"></jsp:include>
-
 <br><br>
 
 <%
-String name="웨이";
+String name="홍길동";
 %>
 
-main.JSP의 name = <%=name %>
+main.jsp의 name = <%=name %>
 
-
-<br><br>
-
-<h3>3초뒤에 페이지 이동</h3>
+<h3>** 3초뒤에 페이지 이동 **</h3>
 <%
-
-	response.setHeader("Refresh", "3;url=../el/elInput.jsp");
+response.setHeader("Refresh", "3;url=../el/elInput.jsp");
 %>
-
-
-
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
